@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    color: #333;
+}
+h1 {
+    font-size: 40px;
+    line-height: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+    letter-spacing: 0.3em;
+}
+div {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+.b-reviews {
+    .reviews {
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__inner {
+            padding: 30px 40px;
+            background: #ffffff;
+            border: 1px solid #e6e6e6;
+        }
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        &__person {
+            display: flex;
+            align-items: center;
+        }
+        &__photo {
+            margin-right: 20px;
+        }
+        &__date {
+            font-size: 14px;
+            line-height: 26px;
+            color: #999999;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.02em;
+            color: #000000;
+        }
+        &__text {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 26px;
+            color: #333333;
+        }
+        &__rating {
+            margin: 0 -2px;
+            display: flex;
+        }
+        &__star {
+            padding: 0 2px;
+        }
+    }
+}
