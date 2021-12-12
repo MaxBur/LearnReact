@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { ReviewList } from './components';
+import { ReviewsPage } from './Reviews';
 
 import './scss/main.scss';
+import './scss/main_media.scss';
 
 ReactDOM.render(
     <React.StrictMode>
-        <ReviewList />
+        <ReviewsPage />
     </React.StrictMode>,
     document.getElementById('root'),
 );
