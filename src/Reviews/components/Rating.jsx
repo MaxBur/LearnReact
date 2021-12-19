@@ -8,13 +8,13 @@ function Rating({ reviewRating }) {
     const notActiveRating = maxRating - reviewRating;
     return (
         <div className="reviews__rating">
-            {[...Array(reviewRating)].map((star, i) => (
-                <div className="reviews__star">
+            {[...Array(reviewRating)].map((star, index) => (
+                <div key={index} className="reviews__star">
                     <img src={StarActiveIcon} alt="" />
                 </div>
             ))}
             {[...Array(notActiveRating)].map((star, index) => (
-                <div className="reviews__star">
+                <div key={index} className="reviews__star">
                     <img src={StarIcon} alt="" />
                 </div>
             ))}

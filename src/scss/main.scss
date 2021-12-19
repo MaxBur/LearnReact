@@ -19,52 +19,47 @@ div {
     margin: 0 auto;
     padding: 50px 20px;
 }
-.b-reviews {
-    .reviews {
-        &__item {
-            margin-bottom: 30px;
+.b-header {
+    margin: 40px 0 20px;
+
+    .header {
+        &__wrapper {
+            max-width: 1240px;
+            margin: 0 auto;
         }
-        &__inner {
-            padding: 30px 40px;
-            background: #ffffff;
-            border: 1px solid #e6e6e6;
-        }
-        &__top {
+        &__links {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
+            margin: 0 -20px;
+            justify-content: center;
         }
-        &__person {
-            display: flex;
-            align-items: center;
+        &__link {
+            box-sizing: border-box;
+            padding: 0 10px;
+
+            a:link,
+            a:visited {
+                display: block;
+                box-sizing: border-box;
+                padding: 12px 20px;
+                width: 200px;
+                font-size: 20px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                border: 2px solid #e6e6e6;
+                transition: background 0.2s ease;
+            }
+            a:hover {
+                background: #e6e6e6;
+                color: #000;
+            }
         }
-        &__photo {
-            margin-right: 20px;
-        }
-        &__date {
-            font-size: 14px;
-            line-height: 26px;
-            color: #999999;
-        }
-        &__name {
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0.02em;
-            color: #000000;
-        }
-        &__text {
-            font-weight: 300;
-            font-size: 15px;
-            line-height: 26px;
-            color: #333333;
-        }
-        &__rating {
-            margin: 0 -2px;
-            display: flex;
-        }
-        &__star {
-            padding: 0 2px;
+        &__link--active {
+            a:link,
+            a:visited {
+                background: #e6e6e6;
+                color: #000;
+            }
         }
     }
 }

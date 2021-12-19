@@ -1,45 +1,17 @@
 import React from 'react';
 
-import PersonIcon from '../assets/img/reviews_person_icon.svg';
+import './scss/reviews.scss';
+import './scss/reviews_media.scss';
 
 import ReviewsList from './components/ReviewsList';
-
-const aReviews = [
-    {
-        approved: true,
-        person: {
-            avatar: PersonIcon,
-            name: 'Иванов Иван',
-            date: '14 октября 2021',
-        },
-        rating: 2,
-        text: ' Подробно ответили на мои вопросы, рассказал о технических особенностях.',
-    },
-    {
-        approved: true,
-        person: {
-            avatar: PersonIcon,
-            name: 'Иванов Иван',
-            date: '14 октября 2021',
-        },
-        rating: 3,
-        text: ' Подробно ответили на мои вопросы, рассказал о технических особенностях.',
-    },
-    {
-        approved: false,
-        person: {
-            avatar: PersonIcon,
-            name: 'Иванов Иван',
-            date: '14 октября 2021',
-        },
-        rating: 3,
-        text: ' Подробно ответили на мои вопросы, рассказал о технических особенностях.',
-    },
-];
+import aReviews from './reviewsArr';
 
 function ReviewsPage() {
     return (
-        <div>
+        <div className="b-reviews">
+            <div className="reviews__title">
+                <h1>Отзывы</h1>
+            </div>
             <ReviewsList aReviews={aReviews} />
         </div>
     );
