@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import ReviewsPage from '../Reviews/ReviewsPage';
 import FaqPage from '../Faq/FaqPage';
 import HeadLink from './HeadLink';
+import TodoPage from '../Todo/TodoPage';
 
 import aLinks from './linksArr';
 
@@ -18,6 +19,7 @@ function HomePage() {
                 <Routes>
                     <Route exap path="/" element={<ReviewsPage />} />
                     <Route exap path="/faq" element={<FaqPage />} />
+                    <Route exap path="/todo" element={<TodoPage />} />
                 </Routes>
             </div>
         </div>

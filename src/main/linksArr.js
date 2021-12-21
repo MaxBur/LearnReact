@@ -9,6 +9,11 @@ const aLinks = [
         name: 'Faq',
         link: '/faq',
     },
+    {
+        id: 2,
+        name: 'Todo',
+        link: '/todo',
+    },
 ];
 
 export default aLinks;

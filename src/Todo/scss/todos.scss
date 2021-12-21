@@ -1,0 +1,19 @@
+.b-todos {
+    .todos {
+        &__item {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        &__inner {
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 226, 226, 1);
+            border: 1px solid #e6e6e6;
+        }
+        &__item--completed {
+            .todos__inner {
+                background: rgba(229, 255, 203, 1);
+            }
+        }
+    }
+}
